@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html lan="en">
-    <head>    
-        <script>
-            function submit(){
-
-            }
-        </script>
+<html lang="en">
+    <head>
+        <title>Math Quiz</title>
+        <li href="https://www.w3schools.com/js/js_function_definition.asp"></li>
+        <li href="https://www.w3schools.com/jsref/met_loc_replace.asp"></li>
+        <li href="https://www.w3schools.com/jsref/met_storage_getitem.asp"></li>
     </head>
     <body>
-        <style>
-            body{
-                text-align: center;
-                background-color: chartreuse;
-            }
-            #title{
-                font-size: large;
-                color: crimson;
-            }
-        </style>
-        <h1 id="title">Math Quiz game!</h1>
-        <p>
-            Game rules:
-            The first poerson will enter a equation and the second person will answetr it.
-        </p>
-        <label>Equation</label>
-        <br>
-        <br>
-        <input type="text" placeholder="Enter the equation">
-        <br>
-        <br>
-        <button id="submit" onclick="submit()">Submit</button>
-        <br>
-        <br>
-        <br>
-        <label>Answer</label>
-        <br>
-        <br>
-        <input type="text" placeholder="Enter the answer">
-        <br>
-        <br>
-        <button id="answer" onclick="answer()">Submit</button>
+        <div class="container">
+            <h2 id="player1_name"></h2>
+            <span id="player1_score"></span>
+            <br>
+            <h2 id="player2_name"></h2>
+            <span id="player2_score"></span>
+            <br>
+            <center>
+                <h2 style="color: white;">Math Quiz!</h2>
+                <h3 id="player_question"></h3>
+                <h3 id="player_answer"></h3>
+                <div id="output" class="col-lg-6"></div>
+
+
+                <br>
+                <br>
+
+                <label>Send a Number:</label>
+                <input type="text" id="word" class="form-control" placeholder="Type a Number">
+                <br>
+                <button class="btn btn-success" onclick="send()">Send</button>
+                <br>
+            </center>
+        </div>
+
+        <script src="gampage.js"></script>
+    </body>
 </html>

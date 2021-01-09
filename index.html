@@ -2,15 +2,7 @@
 <html lang="en">
     <head>
         <title>Math Quiz</title>
-        <script>
-            function login(){
-                player1name=document.getElementById("player1_name").value;
-                player2name=document.getElementById("player2_name").value;
-                localStorage.setItem("player1key",player1name);
-                localStorage.setItem("player2key",player2name);
-                window.location="gamepage.html";
-            }
-        </script>
+           
     </head>
     <style>
         #Title{
@@ -34,18 +26,19 @@
         <marquee behaviour="alternate" direction="left"> <!--Marquee tag added-->
             <h1 id="Title">Math Quiz</h1>
         </marquee>
-        <label id="Username1"><b>Username 1</b></label>
+        <label id="player1_name"><b>Username 1</b></label>
         <br>
         <br>
         <input id="input1" type="text" placeholder="Enter a username">
         <br>
         <br>
-        <label id="Username2"><b>Username 2</b></label>
+        <label id="player2_name"><b>Username 2</b></label>
         <br>
         <br>
         <input id="input2" type="text" placeholder="Enter a username">
         <br>
         <br>
         <button onclick="login()" id="login">Go to Game page</button>
+        <script src="main.js"></script>
     </body>
 </html>
